@@ -1,4 +1,60 @@
 //where i write javascript code
+$(document).ready(function () {
+
+  $('.box').on('click', combinationFunctions)
+
+
+function combinationFunctions(){
+  var index = ($('.box').index(this))
+  console.log(index)
+    changeTurnText()
+  playTurn(index)
+  // inputXO(index)
+  console.log(totalMoves)
+}
+
+// //
+// function inputXO(index) {
+// console.log(player)
+// console.log($('.box').get(index))
+// if (player = 1){
+// $('.box').get(index).text('x')
+// }
+// else {
+// $('.box').get(index).text('o')
+// }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 totalMoves = [0,0,0,0,0,0,0,0,0]
 player = 1
 
@@ -36,3 +92,47 @@ function playTurn(moves){
       else {player = 1}
    return true}
 }
+
+
+
+function changeTurnText(){
+$('h2').toggle()
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+})
